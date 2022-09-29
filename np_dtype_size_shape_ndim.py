@@ -34,3 +34,15 @@ print(c)
 b[0,0]= 100
 print(c)
 print(f'but id is different id b={id(b)} id c={id(c)}')
+
+print(' "-1" means that it will autocalculate ')
+z = b.reshape(2,3,-1)
+print('(2,3,-1)\n',z)
+z = b.reshape(-1,1)
+print('(-1,1)\n',z)
+z = b.reshape(1,-1)
+print('(1,-1)\n', z)
+
+
+# if ([value]) - vector
+# if ([[value]]) - matrix
